@@ -20,9 +20,10 @@ jobs:
           kernel-branch: main
           config: ums512_defconfig
           arch: arm64
-          aosp-gcc: false
+          aosp-gcc: true
           aosp-clang: true
-          ksu-next: true
+          ksu: true
+          ksu-url: https://github.com/rifsxd/KernelSU-Next
           ksu-version: main
           android-version: 15
           aosp-clang-version: r450784e
