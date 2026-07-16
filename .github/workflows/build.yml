@@ -20,8 +20,9 @@ jobs:
           kernel-branch: main
           config: ums512_defconfig
           arch: arm64
-          aosp-gcc: true
-          aosp-clang: true
+          aosp-gcc: false
+          aosp-clang: false
+          compiler: proton
           ksu: true
           ksu-url: https://github.com/rifsxd/KernelSU-Next
           ksu-version: main
