@@ -16,13 +16,15 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/realme-kernel-opensource/realme_C51_C53_Narzo-N53-AndroidT-kernel-source
+          depth: 1
           # kernel-dir: msm-4.19
           kernel-branch: main
           config: ums512_defconfig
           arch: arm64
           aosp-gcc: false
           aosp-clang: false
-          compiler: proton
+          other-clang-url: https://github.com/kdrag0n/proton-clang
+          other-clang-branch: master
           ksu: true
           ksu-url: https://github.com/rifsxd/KernelSU-Next
           ksu-version: main
